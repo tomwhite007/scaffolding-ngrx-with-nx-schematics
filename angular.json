@@ -2,6 +2,16 @@
   "version": 1,
   "projects": {},
   "cli": {
-    "defaultCollection": "@nrwl/workspace"
+    "defaultCollection": "@nrwl/angular",
+    "analytics": "082c4873-5ded-455c-9321-1d5a1dc1cf1c"
+  },
+  "schematics": {
+    "@nrwl/angular:application": {
+      "unitTestRunner": "karma",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "unitTestRunner": "karma"
+    }
   }
 }
