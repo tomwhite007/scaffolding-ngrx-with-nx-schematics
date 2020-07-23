@@ -38,7 +38,11 @@
     "@angular/platform-browser-dynamic": "^10.0.0",
     "@angular/router": "^10.0.0",
     "rxjs": "~6.5.5",
-    "zone.js": "^0.10.2"
+    "zone.js": "^0.10.2",
+    "@ngrx/store": "9.1.0",
+    "@ngrx/effects": "9.1.0",
+    "@ngrx/entity": "9.1.0",
+    "@ngrx/router-store": "9.1.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.0",
@@ -64,6 +68,8 @@
     "prettier": "2.0.4",
     "ts-node": "~7.0.0",
     "tslint": "~6.0.0",
-    "typescript": "~3.9.3"
+    "typescript": "~3.9.3",
+    "@ngrx/schematics": "9.1.0",
+    "@ngrx/store-devtools": "9.1.0"
   }
 }
