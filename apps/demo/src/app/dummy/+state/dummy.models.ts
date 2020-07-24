@@ -2,5 +2,6 @@
  * Interface for the 'Dummy' data
  */
 export interface DummyEntity {
-  id: string | number; // Primary ID
+  id: string; // Primary ID
+  title: string;
 }

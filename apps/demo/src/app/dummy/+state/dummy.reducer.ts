@@ -35,7 +35,24 @@ const dummyReducer = createReducer(
   on(DummyActions.loadDummySuccess, (state, { dummy }) =>
     dummyAdapter.addAll(dummy, { ...state, loaded: true })
   ),
-  on(DummyActions.loadDummyFailure, (state, { error }) => ({ ...state, error }))
+  on(DummyActions.loadDummyFailure, (state, { error }) => ({
+    ...state,
+    error,
+  })),
+  on(DummyActions.loadDummyFailure, (state, { error }) => ({
+    ...state,
+    error,
+  })),
+  on(DummyActions.updateItem, (state, { item }) =>
+    dummyAdapter.upsertOne(item, state)
+  ),
+  on(DummyActions.addItem, (state, { item }) =>
+    dummyAdapter.addOne(item, state)
+  ),
+  on(DummyActions.setSelected, (state, { selectedId }) => ({
+    ...state,
+    selectedId,
+  }))
 );
 
 export function reducer(state: State | undefined, action: Action) {

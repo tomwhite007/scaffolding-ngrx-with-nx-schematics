@@ -9,6 +9,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +17,7 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
     BrowserModule,
     RouterModule.forRoot([], { initialNavigation: 'enabled' }),
     DummyModule,
+    FormsModule,
     StoreModule.forRoot(
       {},
       {
