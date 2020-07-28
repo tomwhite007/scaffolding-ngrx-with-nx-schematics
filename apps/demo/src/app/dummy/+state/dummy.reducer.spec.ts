@@ -6,7 +6,7 @@ describe('Dummy Reducer', () => {
   const createDummyEntity = (id: string, name = '') =>
     ({
       id,
-      name: name || `name-${id}`,
+      title: name || `name-${id}`,
     } as DummyEntity);
 
   beforeEach(() => {});
